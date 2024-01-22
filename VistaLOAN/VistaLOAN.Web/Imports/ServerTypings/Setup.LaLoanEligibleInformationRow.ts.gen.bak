@@ -1,0 +1,137 @@
+﻿
+namespace VistaLOAN.Setup {
+    export interface LaLoanEligibleInformationRow {
+        Id?: number;
+        LoanTypeId?: number;
+        EmployeeCategoryId?: number;
+        GradeFromId?: number;
+        GradeToId?: number;
+        ServiceDurationMin?: number;
+        MaxNoLoanApply?: number;
+        IUser?: string;
+        IDate?: string;
+        EUser?: string;
+        EDate?: string;
+        LoanTypeLoanTypeName?: string;
+        LoanTypePrincipalHeadId?: number;
+        LoanTypeInterestHeadId?: number;
+        LoanTypeIsWelfareLoan?: boolean;
+        LoanTypeIsPfLoan?: boolean;
+        LoanTypeIsInterestPaymentWithPricipal?: boolean;
+        LoanTypeIsInterestCalculateOnIssueDate?: boolean;
+        LoanTypeGracePeriodMonth?: number;
+        LoanTypeCalculationType?: number;
+        LoanTypeShortCode?: string;
+        LoanTypeIUser?: string;
+        LoanTypeIDate?: string;
+        LoanTypeEUser?: string;
+        LoanTypeEDate?: string;
+        EmployeeCategoryName?: string;
+        EmployeeCategorySortOrder?: number;
+        EmployeeCategoryRemarks?: string;
+        EmployeeCategoryIUser?: string;
+        EmployeeCategoryEUser?: string;
+        EmployeeCategoryIDate?: string;
+        EmployeeCategoryEDate?: string;
+        GradeFromSalaryScaleId?: number;
+        GradeFromGradeName?: string;
+        GradeFromGradeCode?: string;
+        GradeFromNumberOfSteps?: number;
+        GradeFromInitialBasic?: number;
+        GradeFromLastBasic?: number;
+        GradeFromYearlyIncrement?: number;
+        GradeFromDateOfEffective?: string;
+        GradeFromIsConsolidated?: boolean;
+        GradeFromIUser?: string;
+        GradeFromIDate?: string;
+        GradeFromEUser?: string;
+        GradeFromEDate?: string;
+        GradeFromPayScale?: string;
+        GradeToSalaryScaleId?: number;
+        GradeToGradeName?: string;
+        GradeToGradeCode?: string;
+        GradeToNumberOfSteps?: number;
+        GradeToInitialBasic?: number;
+        GradeToLastBasic?: number;
+        GradeToYearlyIncrement?: number;
+        GradeToDateOfEffective?: string;
+        GradeToIsConsolidated?: boolean;
+        GradeToIUser?: string;
+        GradeToIDate?: string;
+        GradeToEUser?: string;
+        GradeToEDate?: string;
+        GradeToPayScale?: string;
+    }
+
+    export namespace LaLoanEligibleInformationRow {
+        export const idProperty = 'Id';
+        export const nameProperty = 'IUser';
+        export const localTextPrefix = 'Setup.LaLoanEligibleInformation';
+
+        export namespace Fields {
+            export declare const Id;
+            export declare const LoanTypeId;
+            export declare const EmployeeCategoryId;
+            export declare const GradeFromId;
+            export declare const GradeToId;
+            export declare const ServiceDurationMin;
+            export declare const MaxNoLoanApply;
+            export declare const IUser;
+            export declare const IDate;
+            export declare const EUser;
+            export declare const EDate;
+            export declare const LoanTypeLoanTypeName: string;
+            export declare const LoanTypePrincipalHeadId: string;
+            export declare const LoanTypeInterestHeadId: string;
+            export declare const LoanTypeIsWelfareLoan: string;
+            export declare const LoanTypeIsPfLoan: string;
+            export declare const LoanTypeIsInterestPaymentWithPricipal: string;
+            export declare const LoanTypeIsInterestCalculateOnIssueDate: string;
+            export declare const LoanTypeGracePeriodMonth: string;
+            export declare const LoanTypeCalculationType: string;
+            export declare const LoanTypeShortCode: string;
+            export declare const LoanTypeIUser: string;
+            export declare const LoanTypeIDate: string;
+            export declare const LoanTypeEUser: string;
+            export declare const LoanTypeEDate: string;
+            export declare const EmployeeCategoryName: string;
+            export declare const EmployeeCategorySortOrder: string;
+            export declare const EmployeeCategoryRemarks: string;
+            export declare const EmployeeCategoryIUser: string;
+            export declare const EmployeeCategoryEUser: string;
+            export declare const EmployeeCategoryIDate: string;
+            export declare const EmployeeCategoryEDate: string;
+            export declare const GradeFromSalaryScaleId: string;
+            export declare const GradeFromGradeName: string;
+            export declare const GradeFromGradeCode: string;
+            export declare const GradeFromNumberOfSteps: string;
+            export declare const GradeFromInitialBasic: string;
+            export declare const GradeFromLastBasic: string;
+            export declare const GradeFromYearlyIncrement: string;
+            export declare const GradeFromDateOfEffective: string;
+            export declare const GradeFromIsConsolidated: string;
+            export declare const GradeFromIUser: string;
+            export declare const GradeFromIDate: string;
+            export declare const GradeFromEUser: string;
+            export declare const GradeFromEDate: string;
+            export declare const GradeFromPayScale: string;
+            export declare const GradeToSalaryScaleId: string;
+            export declare const GradeToGradeName: string;
+            export declare const GradeToGradeCode: string;
+            export declare const GradeToNumberOfSteps: string;
+            export declare const GradeToInitialBasic: string;
+            export declare const GradeToLastBasic: string;
+            export declare const GradeToYearlyIncrement: string;
+            export declare const GradeToDateOfEffective: string;
+            export declare const GradeToIsConsolidated: string;
+            export declare const GradeToIUser: string;
+            export declare const GradeToIDate: string;
+            export declare const GradeToEUser: string;
+            export declare const GradeToEDate: string;
+            export declare const GradeToPayScale: string;
+        }
+
+        ['Id', 'LoanTypeId', 'EmployeeCategoryId', 'GradeFromId', 'GradeToId', 'ServiceDurationMin', 'MaxNoLoanApply', 'IUser', 'IDate', 'EUser', 'EDate', 'LoanTypeLoanTypeName', 'LoanTypePrincipalHeadId', 'LoanTypeInterestHeadId', 'LoanTypeIsWelfareLoan', 'LoanTypeIsPfLoan', 'LoanTypeIsInterestPaymentWithPricipal', 'LoanTypeIsInterestCalculateOnIssueDate', 'LoanTypeGracePeriodMonth', 'LoanTypeCalculationType', 'LoanTypeShortCode', 'LoanTypeIUser', 'LoanTypeIDate', 'LoanTypeEUser', 'LoanTypeEDate', 'EmployeeCategoryName', 'EmployeeCategorySortOrder', 'EmployeeCategoryRemarks', 'EmployeeCategoryIUser', 'EmployeeCategoryEUser', 'EmployeeCategoryIDate', 'EmployeeCategoryEDate', 'GradeFromSalaryScaleId', 'GradeFromGradeName', 'GradeFromGradeCode', 'GradeFromNumberOfSteps', 'GradeFromInitialBasic', 'GradeFromLastBasic', 'GradeFromYearlyIncrement', 'GradeFromDateOfEffective', 'GradeFromIsConsolidated', 'GradeFromIUser', 'GradeFromIDate', 'GradeFromEUser', 'GradeFromEDate', 'GradeFromPayScale', 'GradeToSalaryScaleId', 'GradeToGradeName', 'GradeToGradeCode', 'GradeToNumberOfSteps', 'GradeToInitialBasic', 'GradeToLastBasic', 'GradeToYearlyIncrement', 'GradeToDateOfEffective', 'GradeToIsConsolidated', 'GradeToIUser', 'GradeToIDate', 'GradeToEUser', 'GradeToEDate', 'GradeToPayScale'].forEach(x => (<any>Fields)[x] = x);
+    }
+}
+

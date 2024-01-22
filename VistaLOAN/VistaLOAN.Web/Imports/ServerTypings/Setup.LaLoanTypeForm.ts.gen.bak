@@ -1,0 +1,26 @@
+﻿
+
+namespace VistaLOAN.Setup {
+    export class LaLoanTypeForm extends Serenity.PrefixedContext {
+        static formKey = 'Setup.LaLoanType';
+    }
+
+    export interface LaLoanTypeForm {
+        LoanTypeName: Serenity.StringEditor;
+        PrincipalHeadId: Serenity.IntegerEditor;
+        InterestHeadId: Serenity.IntegerEditor;
+        IsWelfareLoan: Serenity.BooleanEditor;
+        IsPfLoan: Serenity.BooleanEditor;
+        IsInterestPaymentWithPricipal: Serenity.BooleanEditor;
+        IsInterestCalculateOnIssueDate: Serenity.BooleanEditor;
+        GracePeriodMonth: Serenity.IntegerEditor;
+        CalculationType: Serenity.IntegerEditor;
+        ShortCode: Serenity.StringEditor;
+        IUser: Serenity.StringEditor;
+        IDate: Serenity.DateEditor;
+        EUser: Serenity.StringEditor;
+        EDate: Serenity.DateEditor;
+    }
+
+    [['LoanTypeName', () => Serenity.StringEditor], ['PrincipalHeadId', () => Serenity.IntegerEditor], ['InterestHeadId', () => Serenity.IntegerEditor], ['IsWelfareLoan', () => Serenity.BooleanEditor], ['IsPfLoan', () => Serenity.BooleanEditor], ['IsInterestPaymentWithPricipal', () => Serenity.BooleanEditor], ['IsInterestCalculateOnIssueDate', () => Serenity.BooleanEditor], ['GracePeriodMonth', () => Serenity.IntegerEditor], ['CalculationType', () => Serenity.IntegerEditor], ['ShortCode', () => Serenity.StringEditor], ['IUser', () => Serenity.StringEditor], ['IDate', () => Serenity.DateEditor], ['EUser', () => Serenity.StringEditor], ['EDate', () => Serenity.DateEditor]].forEach(x => Object.defineProperty(LaLoanTypeForm.prototype, <string>x[0], { get: function () { return this.w(x[0], (x[1] as any)()); }, enumerable: true, configurable: true }));
+}

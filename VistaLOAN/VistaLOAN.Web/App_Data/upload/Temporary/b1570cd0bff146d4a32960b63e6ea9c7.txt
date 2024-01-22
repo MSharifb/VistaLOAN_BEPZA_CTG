@@ -1,0 +1,32 @@
+
+
+SELECT [ErrorId]
+, [Application]
+, [Host]
+, [Type]
+, [Source]
+, [Message]
+, [User]
+, [StatusCode]
+, [TimeUtc]
+, [Sequence]
+, ISNULL([AllXml].value('( /error /serverVariables /item[@name="REMOTE_ADDR"] /value /@string)[1]', 'varchar(20)'), N'') REMOTE_ADDR
+, ISNULL([AllXml].value('( /error /serverVariables /item[@name="HTTP_USER_AGENT"] /value /@string)[1]', 'nvarchar(250)'), N'') HTTP_USER_AGENT
+, ISNULL([AllXml].value('( /error /serverVariables /item[@name="HTTP_REFERER"] /value /@string)[1]', 'nvarchar(2000)'), N'') HTTP_REFERER 
+, ISNULL([AllXml].value('( /error /serverVariables /item[@name="PATH_TRANSLATED"] /value /@string)[1]', 'nvarchar(2000)'), N'') PATH_TRANSLATED 
+
+FROM ( SELECT [ErrorId]
+, [Application]
+, [Host]
+, [Type]
+, [Source]
+, [Message]
+, [User]
+, [StatusCode]
+, [TimeUtc]
+, [Sequence]
+, CAST( -- Remove characters invalid in XML 
+REPLACE(CAST([AllXml] AS NVARCHAR(MAX)), CHAR(0), '?') AS XML) [AllXml] 
+
+FROM [ELMAH_Error]) AS [Error] 
+

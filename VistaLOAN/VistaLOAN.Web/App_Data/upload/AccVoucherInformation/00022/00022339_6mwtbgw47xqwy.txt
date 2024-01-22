@@ -1,0 +1,34 @@
+
+
+Four Tables:
+--------------------
+
+1. NTF_NotificationFlowSetup - all rules are stored here.
+
+2. NTF_Notification - notification message
+	
+3. NTF_NotificationFlow - to whom notificaiton will go
+
+4. NTF_NotificationReadBy - who read notificaitons.
+
+Notification lists will populate unread messages.
+
+[There could be an option to get [already read] messages]
+
+
+
+UI:
+-------------------
+ERP_BEPZA.Web - View - Shared - NotificationTemplate
+
+Area - Controller - HomeController [Important is AreaName]
+
+New Menu - My Notifications [/AreaName/Home/Index]
+
+
+
+
+
+
+
+

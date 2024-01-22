@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = Serenity.LocalText.Get("Db.Task.NonRefundableFinalPayment.EntityPlural");
+}
+
+<div id="GridDiv"></div>
+<script type="text/javascript">
+    jQuery(function () {
+        new VistaLOAN.Task.NonRefundableFinalPaymentGrid($('#GridDiv'), {}).init();
+
+        Q.initFullHeightGridPage($('#GridDiv'));
+    });
+</script>

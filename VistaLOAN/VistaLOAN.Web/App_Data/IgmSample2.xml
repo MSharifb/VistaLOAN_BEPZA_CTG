@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Document created with online XML Editor http://xmlgrid.net 2016/09/20 16:59:20  -->
+   <Awmds>
+         <General_segment>
+               <General_segment_id>
+                     <Customs_office_code>Mongla Customs Office</Customs_office_code>
+                     <Voyage_number>1000N/2015</Voyage_number>
+                     <Date_of_departure>2015-07-03</Date_of_departure>
+                     <Date_of_arrival>2015-07-04</Date_of_arrival>
+                     <!-- <Time_of_arrival></Time_of_arrival>
+                     <Date_of_last_discharge></Date_of_last_discharge> -->
+               </General_segment_id>
+               <Totals_segment>
+                     <Total_number_of_bols>1</Total_number_of_bols>
+                     <Total_number_of_packages>50</Total_number_of_packages>
+                     <Total_number_of_containers>9</Total_number_of_containers>
+                     <Total_gross_mass>100</Total_gross_mass>
+               </Totals_segment>
+               <Transport_information>
+                     <Carrier>
+                           <Carrier_code>501000001</Carrier_code>
+                           <Carrier_name>Manifest Branch,Mongla Custom House</Carrier_name>
+                           <Carrier_address>Khalishpur Khulna-9000
+							null
+							null
+							null
+							</Carrier_address>
+                     </Carrier>
+                     <Shipping_Agent>
+                           <Shipping_Agent_code>MAERSK</Shipping_Agent_code>
+                           <Shipping_Agent_name>MAERSK BANGLADESH LIMITED</Shipping_Agent_name>
+                     </Shipping_Agent>
+                     <Mode_of_transport_code>1</Mode_of_transport_code>
+                     <Identity_of_transporter>test string</Identity_of_transporter>
+                     <Nationality_of_transporter_code>Bangladesh</Nationality_of_transporter_code>
+                     <Place_of_transporter>test string</Place_of_transporter>
+                     <Registration_number_of_transport_code>Reg#123456</Registration_number_of_transport_code>
+                     <Date_of_registration>2013-07-05</Date_of_registration>
+                     <Master_information>test string</Master_information>
+               </Transport_information>
+               <Load_unload_place>
+                     <Place_of_departure_code>test string</Place_of_departure_code>
+                     <Place_of_destination_code>test string</Place_of_destination_code>
+               </Load_unload_place>
+               <Tonnage>
+                     <Tonnage_net_weight>2.7182818284</Tonnage_net_weight>
+                     <Tonnage_gross_weight>2.7182818284</Tonnage_gross_weight>
+               </Tonnage>
+         </General_segment>
+         <Bol_segment>
+               <Bol_id>
+                     <Bol_reference>Bol_reference#1</Bol_reference>
+                     <Line_number>1</Line_number>
+                     <Bol_nature>22</Bol_nature>
+                     <Bol_type_code>test string</Bol_type_code>
+                     <Master_bol_ref_number>2</Master_bol_ref_number>
+                     <DG_status>test string</DG_status>
+               </Bol_id>
+               <Consolidated_Cargo>1</Consolidated_Cargo>
+               <Load_unload_place>
+                     <Port_of_origin_code>Mumbai</Port_of_origin_code>
+                     <Place_of_unloading_code>Mongla</Place_of_unloading_code>
+               </Load_unload_place>
+               <Traders_segment>
+                     <Carrier>
+                           <Carrier_code>test string</Carrier_code>
+                           <Carrier_name>test string</Carrier_name>
+                           <Carrier_address>test string</Carrier_address>
+                     </Carrier>
+                     <Shipping_Agent>
+                           <Shipping_Agent_code>MAERSK</Shipping_Agent_code>
+                           <Shipping_Agent_name>MAERSK BANGLADESH LIMITED</Shipping_Agent_name>
+                     </Shipping_Agent>
+                     <Exporter>
+                           <Exporter_name>test string</Exporter_name>
+                           <Exporter_address>test string</Exporter_address>
+                     </Exporter>
+                     <Notify>
+                           <Notify_code>test string</Notify_code>
+                           <Notify_name>test string</Notify_name>
+                           <Notify_address>test string</Notify_address>
+                     </Notify>
+                     <Consignee>
+                           <Consignee_code>SA-632546</Consignee_code>
+                           <Consignee_name>Sampan Ltd.</Consignee_name>
+                           <Consignee_address>98, DIT Road, Malibagh, Dhaka.</Consignee_address>
+                     </Consignee>
+					 </Traders_segment>
+
+			   <ctn_segment>
+                     <Ctn_reference>2CTNR123452</Ctn_reference>
+                     <Number_of_packages>14</Number_of_packages>
+                     <Type_of_container>Reff</Type_of_container>
+                     <Status>FCL</Status>
+                    
+                     <Gross_weight>12.7182818284</Gross_weight>
+               </ctn_segment>
+			   <ctn_segment>
+                     <Ctn_reference>2CTNR123453</Ctn_reference>
+                     <Number_of_packages>1</Number_of_packages>
+                     <Type_of_container>Reff</Type_of_container>
+                     <Status>FCL</Status>
+                     
+                     <Gross_weight>1</Gross_weight>
+               </ctn_segment>
+			   <ctn_segment>
+                     <Ctn_reference>2CTNR123454</Ctn_reference>
+                     <Number_of_packages>1</Number_of_packages>
+                     <Type_of_container>Reff</Type_of_container>
+                     <Status>FCL</Status>
+                     
+                     <Gross_weight>1</Gross_weight>
+               </ctn_segment>
+			    <ctn_segment>
+                     <Ctn_reference>2CTNR123455</Ctn_reference>
+                     <Number_of_packages>1</Number_of_packages>
+                     <Type_of_container>Normal</Type_of_container>
+                     <Status>FCL</Status>
+                     
+                     <Gross_weight>1</Gross_weight>
+               </ctn_segment>
+               <Goods_segment>
+                     <Number_of_packages>2.7182818284</Number_of_packages>
+                     <Package_type_code>test string</Package_type_code>
+                     <Gross_mass>2.7182818284</Gross_mass>
+                     <Shipping_marks>test string</Shipping_marks>
+                     <Goods_description>test string</Goods_description>
+                     <Seals_segment>
+                           <Number_of_seals>9</Number_of_seals>
+                           <Marks_of_seals>test string</Marks_of_seals>
+                           <Sealing_party_code>test string</Sealing_party_code>
+                     </Seals_segment>
+                     <Volume_in_cubic_meters>2.7182818284</Volume_in_cubic_meters>
+                     <Num_of_ctn_for_this_bol>9</Num_of_ctn_for_this_bol>
+                     <Remarks>test string</Remarks>
+               </Goods_segment>
+               <Value_segment>
+                     <Freight_segment>
+                           <PC_indicator>test string</PC_indicator>
+                           <Freight_value>2.7182818284</Freight_value>
+                           <Freight_currency>test string</Freight_currency>
+                     </Freight_segment>
+                     <Customs_segment>
+                           <Customs_value>2.7182818284</Customs_value>
+                           <Customs_currency>test string</Customs_currency>
+                     </Customs_segment>
+                     <Insurance_segment>
+                           <Insurance_value>2.7182818284</Insurance_value>
+                           <Insurance_currency>test string</Insurance_currency>
+                     </Insurance_segment>
+                     <Transport_segment>
+                           <Transport_value>2.7182818284</Transport_value>
+                           <Transport_currency>test string</Transport_currency>
+                     </Transport_segment>
+               </Value_segment>
+               <Location>
+                     <Location_code>test string</Location_code>
+                     <Location_info>test string</Location_info>
+               </Location>
+         </Bol_segment>
+		 <Bol_segment>
+               <Bol_id>
+                     <Bol_reference>Bol_reference#2</Bol_reference>
+                     <Line_number>1</Line_number>
+                     <Bol_nature>22</Bol_nature>
+                     <Bol_type_code>test string</Bol_type_code>
+                     <Master_bol_ref_number>2</Master_bol_ref_number>
+                     <DG_status>test string</DG_status>
+               </Bol_id>
+               <Consolidated_Cargo>1</Consolidated_Cargo>
+               <Load_unload_place>
+                     <Port_of_origin_code>Mumbai</Port_of_origin_code>
+                     <Place_of_unloading_code>Mongla</Place_of_unloading_code>
+               </Load_unload_place>
+               <Traders_segment>
+                     <Carrier>
+                           <Carrier_code>test string</Carrier_code>
+                           <Carrier_name>test string</Carrier_name>
+                           <Carrier_address>test string</Carrier_address>
+                     </Carrier>
+                     <Shipping_Agent>
+                           <Shipping_Agent_code>ZIM</Shipping_Agent_code>
+                           <Shipping_Agent_name>ZIM Integrated Shipping Services Ltd</Shipping_Agent_name>
+                     </Shipping_Agent>
+                     <Exporter>
+                           <Exporter_name>test string</Exporter_name>
+                           <Exporter_address>test string</Exporter_address>
+                     </Exporter>
+                     <Notify>
+                           <Notify_code>test string</Notify_code>
+                           <Notify_name>test string</Notify_name>
+                           <Notify_address>test string</Notify_address>
+                     </Notify>
+                     <Consignee>
+                           <Consignee_code>TM-02154</Consignee_code>
+                           <Consignee_name>Tijarah Company Ltd.</Consignee_name>
+                           <Consignee_address>219/C, Tejgaon, Gulshan, Dhaka.</Consignee_address>
+                     </Consignee>
+               </Traders_segment>
+               <ctn_segment>
+                     <Ctn_reference>2CZIM123451</Ctn_reference>
+                     <Number_of_packages>9</Number_of_packages>
+                     <Type_of_container>Reff</Type_of_container>
+                     <Status>FCL</Status>
+                     <!-- <Seal_number></Seal_number> 
+                     <IMCO></IMCO>
+                     <UN></UN>
+                     <Ctn_location></Ctn_location>
+                     <Commodity_code></Commodity_code>-->
+                     <Gross_weight>2.7182818284</Gross_weight>
+               </ctn_segment>
+			   <ctn_segment>
+                     <Ctn_reference>2CZIM123452</Ctn_reference>
+                     <Number_of_packages>14</Number_of_packages>
+                     <Type_of_container>Reff</Type_of_container>
+                     <Status>FCL</Status>
+                    
+                     <Gross_weight>12.7182818284</Gross_weight>
+               </ctn_segment>
+			   <ctn_segment>
+                     <Ctn_reference>2CZIM123453</Ctn_reference>
+                     <Number_of_packages>1</Number_of_packages>
+                     <Type_of_container>Reff</Type_of_container>
+                     <Status>FCL</Status>
+                     
+                     <Gross_weight>1</Gross_weight>
+               </ctn_segment>
+			   <ctn_segment>
+                     <Ctn_reference>2CZIM123454</Ctn_reference>
+                     <Number_of_packages>1</Number_of_packages>
+                     <Type_of_container>Reff</Type_of_container>
+                     <Status>FCL</Status>
+                     
+                     <Gross_weight>1</Gross_weight>
+               </ctn_segment>
+			    <ctn_segment>
+                     <Ctn_reference>2CZIM123455</Ctn_reference>
+                     <Number_of_packages>1</Number_of_packages>
+                     <Type_of_container>Normal</Type_of_container>
+                     <Status>FCL</Status>
+                     
+                     <Gross_weight>1</Gross_weight>
+               </ctn_segment>
+               <Goods_segment>
+                     <Number_of_packages>2.7182818284</Number_of_packages>
+                     <Package_type_code>test string</Package_type_code>
+                     <Gross_mass>2.7182818284</Gross_mass>
+                     <Shipping_marks>test string</Shipping_marks>
+                     <Goods_description>test string</Goods_description>
+                     <Seals_segment>
+                           <Number_of_seals>9</Number_of_seals>
+                           <Marks_of_seals>test string</Marks_of_seals>
+                           <Sealing_party_code>test string</Sealing_party_code>
+                     </Seals_segment>
+                     <Volume_in_cubic_meters>2.7182818284</Volume_in_cubic_meters>
+                     <Num_of_ctn_for_this_bol>9</Num_of_ctn_for_this_bol>
+                     <Remarks>test string</Remarks>
+               </Goods_segment>
+               <Value_segment>
+                     <Freight_segment>
+                           <PC_indicator>test string</PC_indicator>
+                           <Freight_value>2.7182818284</Freight_value>
+                           <Freight_currency>test string</Freight_currency>
+                     </Freight_segment>
+                     <Customs_segment>
+                           <Customs_value>2.7182818284</Customs_value>
+                           <Customs_currency>test string</Customs_currency>
+                     </Customs_segment>
+                     <Insurance_segment>
+                           <Insurance_value>2.7182818284</Insurance_value>
+                           <Insurance_currency>test string</Insurance_currency>
+                     </Insurance_segment>
+                     <Transport_segment>
+                           <Transport_value>2.7182818284</Transport_value>
+                           <Transport_currency>test string</Transport_currency>
+                     </Transport_segment>
+               </Value_segment>
+               <Location>
+                     <Location_code>test string</Location_code>
+                     <Location_info>test string</Location_info>
+               </Location>
+         </Bol_segment>
+   </Awmds>

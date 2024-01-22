@@ -1,0 +1,93 @@
+﻿namespace VistaLOAN.Task {
+    export interface LaRequestedLoanApplicationForm {
+        LoanNo: Serenity.StringEditor;
+        EmployeeId: Serenity.IntegerEditor;
+        SeniorityNo: Serenity.IntegerEditor;
+        ApplyDate: Serenity.DateEditor;
+        LoanCriteriaId: Serenity.LookupEditor;
+        ApplyLoanAmount: Serenity.DecimalEditor;
+        ApplyPrincipalInstallmentNo: Serenity.IntegerEditor;
+        ApplyInterestAmount: Serenity.DecimalEditor;
+        ApplyInterestInstallmentNo: Serenity.IntegerEditor;
+        ApplyInterestRate: Serenity.DecimalEditor;
+        Purpose: Serenity.StringEditor;
+        GrantedLoanAmount: Serenity.DecimalEditor;
+        GrantedPrincipalInstallmentNo: Serenity.IntegerEditor;
+        GrantedInterestAmount: Serenity.DecimalEditor;
+        GrantedInterestInstallmentNo: Serenity.IntegerEditor;
+        GrantedInterestRate: Serenity.DecimalEditor;
+        NodeId: Serenity.IntegerEditor;
+        ApproverId: Serenity.LookupEditor;
+        AppStatusId: Serenity.LookupEditor;
+        IsDiscard: Serenity.BooleanEditor;
+        IsApprovalProcess: Serenity.BooleanEditor;
+        IsOffLine: Serenity.BooleanEditor;
+        IUser: Serenity.StringEditor;
+        IDate: Serenity.DateEditor;
+        EUser: Serenity.StringEditor;
+        EDate: Serenity.DateEditor;
+        ApprovedDate: Serenity.DateEditor;
+        IsRefundablePfLoan: Serenity.BooleanEditor;
+        IsReApply: Serenity.BooleanEditor;
+        IsIssue: Serenity.BooleanEditor;
+        ResponsiblePersonId: Serenity.StringEditor;
+        EmployeeWiseLoanId: Serenity.IntegerEditor;
+    }
+
+    export class LaRequestedLoanApplicationForm extends Serenity.PrefixedContext {
+        static formKey = 'Task.LaRequestedLoanApplication';
+        private static init: boolean;
+
+        constructor(prefix: string) {
+            super(prefix);
+
+            if (!LaRequestedLoanApplicationForm.init)  {
+                LaRequestedLoanApplicationForm.init = true;
+
+                var s = Serenity;
+                var w0 = s.StringEditor;
+                var w1 = s.IntegerEditor;
+                var w2 = s.DateEditor;
+                var w3 = s.LookupEditor;
+                var w4 = s.DecimalEditor;
+                var w5 = s.BooleanEditor;
+
+                Q.initFormType(LaRequestedLoanApplicationForm, [
+                    'LoanNo', w0,
+                    'EmployeeId', w1,
+                    'SeniorityNo', w1,
+                    'ApplyDate', w2,
+                    'LoanCriteriaId', w3,
+                    'ApplyLoanAmount', w4,
+                    'ApplyPrincipalInstallmentNo', w1,
+                    'ApplyInterestAmount', w4,
+                    'ApplyInterestInstallmentNo', w1,
+                    'ApplyInterestRate', w4,
+                    'Purpose', w0,
+                    'GrantedLoanAmount', w4,
+                    'GrantedPrincipalInstallmentNo', w1,
+                    'GrantedInterestAmount', w4,
+                    'GrantedInterestInstallmentNo', w1,
+                    'GrantedInterestRate', w4,
+                    'NodeId', w1,
+                    'ApproverId', w3,
+                    'AppStatusId', w3,
+                    'IsDiscard', w5,
+                    'IsApprovalProcess', w5,
+                    'IsOffLine', w5,
+                    'IUser', w0,
+                    'IDate', w2,
+                    'EUser', w0,
+                    'EDate', w2,
+                    'ApprovedDate', w2,
+                    'IsRefundablePfLoan', w5,
+                    'IsReApply', w5,
+                    'IsIssue', w5,
+                    'ResponsiblePersonId', w0,
+                    'EmployeeWiseLoanId', w1
+                ]);
+            }
+        }
+    }
+}
+

@@ -1,0 +1,18 @@
+﻿
+
+namespace VistaLOAN.Setup {
+    export class LaLoanCriteriaForm extends Serenity.PrefixedContext {
+        static formKey = 'Setup.LaLoanCriteria';
+    }
+
+    export interface LaLoanCriteriaForm {
+        SchemeName: Serenity.StringEditor;
+        LoanTypeId: Serenity.IntegerEditor;
+        IUser: Serenity.StringEditor;
+        IDate: Serenity.DateEditor;
+        EUser: Serenity.StringEditor;
+        EDate: Serenity.DateEditor;
+    }
+
+    [['SchemeName', () => Serenity.StringEditor], ['LoanTypeId', () => Serenity.IntegerEditor], ['IUser', () => Serenity.StringEditor], ['IDate', () => Serenity.DateEditor], ['EUser', () => Serenity.StringEditor], ['EDate', () => Serenity.DateEditor]].forEach(x => Object.defineProperty(LaLoanCriteriaForm.prototype, <string>x[0], { get: function () { return this.w(x[0], (x[1] as any)()); }, enumerable: true, configurable: true }));
+}

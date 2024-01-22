@@ -1,0 +1,32 @@
+﻿
+
+namespace VistaLOAN.Task {
+    export class LaLoanIssueForm extends Serenity.PrefixedContext {
+        static formKey = 'Task.LaLoanIssue';
+    }
+
+    export interface LaLoanIssueForm {
+        LoanApplicationId: Serenity.IntegerEditor;
+        LoanNo: Serenity.StringEditor;
+        EmployeeId: Serenity.IntegerEditor;
+        EffectiveMonth: Serenity.IntegerEditor;
+        EffectiveYear: Serenity.IntegerEditor;
+        LoanAmount: Serenity.DecimalEditor;
+        PrincipalInstallmentAmount: Serenity.DecimalEditor;
+        InterestAmount: Serenity.DecimalEditor;
+        InterestInstallmentAmount: Serenity.DecimalEditor;
+        LastPrincipalInstallmentAmount: Serenity.DecimalEditor;
+        LastInterestInstallmentAmount: Serenity.DecimalEditor;
+        IUser: Serenity.StringEditor;
+        IDate: Serenity.DateEditor;
+        EUser: Serenity.StringEditor;
+        EDate: Serenity.DateEditor;
+        IsFullPaid: Serenity.BooleanEditor;
+        IsReschedule: Serenity.BooleanEditor;
+        IsClose: Serenity.BooleanEditor;
+        FullPaidDate: Serenity.DateEditor;
+        IsPosting: Serenity.BooleanEditor;
+    }
+
+    [['LoanApplicationId', () => Serenity.IntegerEditor], ['LoanNo', () => Serenity.StringEditor], ['EmployeeId', () => Serenity.IntegerEditor], ['EffectiveMonth', () => Serenity.IntegerEditor], ['EffectiveYear', () => Serenity.IntegerEditor], ['LoanAmount', () => Serenity.DecimalEditor], ['PrincipalInstallmentAmount', () => Serenity.DecimalEditor], ['InterestAmount', () => Serenity.DecimalEditor], ['InterestInstallmentAmount', () => Serenity.DecimalEditor], ['LastPrincipalInstallmentAmount', () => Serenity.DecimalEditor], ['LastInterestInstallmentAmount', () => Serenity.DecimalEditor], ['IUser', () => Serenity.StringEditor], ['IDate', () => Serenity.DateEditor], ['EUser', () => Serenity.StringEditor], ['EDate', () => Serenity.DateEditor], ['IsFullPaid', () => Serenity.BooleanEditor], ['IsReschedule', () => Serenity.BooleanEditor], ['IsClose', () => Serenity.BooleanEditor], ['FullPaidDate', () => Serenity.DateEditor], ['IsPosting', () => Serenity.BooleanEditor]].forEach(x => Object.defineProperty(LaLoanIssueForm.prototype, <string>x[0], { get: function () { return this.w(x[0], (x[1] as any)()); }, enumerable: true, configurable: true }));
+}

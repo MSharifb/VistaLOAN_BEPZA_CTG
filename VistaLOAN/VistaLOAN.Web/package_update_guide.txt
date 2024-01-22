@@ -1,0 +1,10 @@
+﻿1.	To allow decimal editor take negative value also by defalut
+	
+	replace:
+		var numericOptions = $.extend($Serenity_DecimalEditor.defaultAutoNumericOptions(), { vMin: this.options.minValue, vMax: this.options.maxValue });
+	with:
+		var numericOptions = $.extend($Serenity_DecimalEditor.defaultAutoNumericOptions(), { vMin: '-999999999.99', vMax: '999999999.99' });
+
+	at: Serenity.Script.UI.js
+
+2.	

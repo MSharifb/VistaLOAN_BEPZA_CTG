@@ -1,0 +1,93 @@
+﻿
+namespace VistaLOAN.Task {
+    export interface LaLoanApplicationRow {
+        Id?: number;
+        LoanNo?: string;
+        EmployeeId?: number;
+        SeniorityNo?: number;
+        ApplyDate?: string;
+        LoanCriteriaId?: number;
+        ApplyLoanAmount?: number;
+        ApplyPrincipalInstallmentNo?: number;
+        ApplyInterestAmount?: number;
+        ApplyInterestInstallmentNo?: number;
+        ApplyInterestRate?: number;
+        Purpose?: string;
+        GrantedLoanAmount?: number;
+        GrantedPrincipalInstallmentNo?: number;
+        GrantedInterestAmount?: number;
+        GrantedInterestInstallmentNo?: number;
+        GrantedInterestRate?: number;
+        NodeId?: number;
+        ApproverId?: string;
+        AppStatusId?: number;
+        IsDiscard?: boolean;
+        IsApprovalProcess?: boolean;
+        IsOffLine?: boolean;
+        IUser?: string;
+        IDate?: string;
+        EUser?: string;
+        EDate?: string;
+        ApprovedDate?: string;
+        IsRefundablePfLoan?: boolean;
+        IsReApply?: boolean;
+        IsIssue?: boolean;
+        ResponsiblePersonId?: string;
+        LoanCriteriaSchemeName?: string;
+        LoanCriteriaLoanTypeId?: number;
+        LoanCriteriaIUser?: string;
+        LoanCriteriaIDate?: string;
+        LoanCriteriaEUser?: string;
+        LoanCriteriaEDate?: string;
+    }
+
+    export namespace LaLoanApplicationRow {
+        export const idProperty = 'Id';
+        export const nameProperty = 'LoanNo';
+        export const localTextPrefix = 'Task.LaLoanApplication';
+
+        export namespace Fields {
+            export declare const Id;
+            export declare const LoanNo;
+            export declare const EmployeeId;
+            export declare const SeniorityNo;
+            export declare const ApplyDate;
+            export declare const LoanCriteriaId;
+            export declare const ApplyLoanAmount;
+            export declare const ApplyPrincipalInstallmentNo;
+            export declare const ApplyInterestAmount;
+            export declare const ApplyInterestInstallmentNo;
+            export declare const ApplyInterestRate;
+            export declare const Purpose;
+            export declare const GrantedLoanAmount;
+            export declare const GrantedPrincipalInstallmentNo;
+            export declare const GrantedInterestAmount;
+            export declare const GrantedInterestInstallmentNo;
+            export declare const GrantedInterestRate;
+            export declare const NodeId;
+            export declare const ApproverId;
+            export declare const AppStatusId;
+            export declare const IsDiscard;
+            export declare const IsApprovalProcess;
+            export declare const IsOffLine;
+            export declare const IUser;
+            export declare const IDate;
+            export declare const EUser;
+            export declare const EDate;
+            export declare const ApprovedDate;
+            export declare const IsRefundablePfLoan;
+            export declare const IsReApply;
+            export declare const IsIssue;
+            export declare const ResponsiblePersonId;
+            export declare const LoanCriteriaSchemeName: string;
+            export declare const LoanCriteriaLoanTypeId: string;
+            export declare const LoanCriteriaIUser: string;
+            export declare const LoanCriteriaIDate: string;
+            export declare const LoanCriteriaEUser: string;
+            export declare const LoanCriteriaEDate: string;
+        }
+
+        ['Id', 'LoanNo', 'EmployeeId', 'SeniorityNo', 'ApplyDate', 'LoanCriteriaId', 'ApplyLoanAmount', 'ApplyPrincipalInstallmentNo', 'ApplyInterestAmount', 'ApplyInterestInstallmentNo', 'ApplyInterestRate', 'Purpose', 'GrantedLoanAmount', 'GrantedPrincipalInstallmentNo', 'GrantedInterestAmount', 'GrantedInterestInstallmentNo', 'GrantedInterestRate', 'NodeId', 'ApproverId', 'AppStatusId', 'IsDiscard', 'IsApprovalProcess', 'IsOffLine', 'IUser', 'IDate', 'EUser', 'EDate', 'ApprovedDate', 'IsRefundablePfLoan', 'IsReApply', 'IsIssue', 'ResponsiblePersonId', 'LoanCriteriaSchemeName', 'LoanCriteriaLoanTypeId', 'LoanCriteriaIUser', 'LoanCriteriaIDate', 'LoanCriteriaEUser', 'LoanCriteriaEDate'].forEach(x => (<any>Fields)[x] = x);
+    }
+}
+

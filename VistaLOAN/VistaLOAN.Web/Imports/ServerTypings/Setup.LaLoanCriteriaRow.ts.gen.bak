@@ -1,0 +1,59 @@
+﻿
+namespace VistaLOAN.Setup {
+    export interface LaLoanCriteriaRow {
+        Id?: number;
+        SchemeName?: string;
+        LoanTypeId?: number;
+        IUser?: string;
+        IDate?: string;
+        EUser?: string;
+        EDate?: string;
+        LoanTypeLoanTypeName?: string;
+        LoanTypePrincipalHeadId?: number;
+        LoanTypeInterestHeadId?: number;
+        LoanTypeIsWelfareLoan?: boolean;
+        LoanTypeIsPfLoan?: boolean;
+        LoanTypeIsInterestPaymentWithPricipal?: boolean;
+        LoanTypeIsInterestCalculateOnIssueDate?: boolean;
+        LoanTypeGracePeriodMonth?: number;
+        LoanTypeCalculationType?: number;
+        LoanTypeShortCode?: string;
+        LoanTypeIUser?: string;
+        LoanTypeIDate?: string;
+        LoanTypeEUser?: string;
+        LoanTypeEDate?: string;
+    }
+
+    export namespace LaLoanCriteriaRow {
+        export const idProperty = 'Id';
+        export const nameProperty = 'SchemeName';
+        export const localTextPrefix = 'Setup.LaLoanCriteria';
+
+        export namespace Fields {
+            export declare const Id;
+            export declare const SchemeName;
+            export declare const LoanTypeId;
+            export declare const IUser;
+            export declare const IDate;
+            export declare const EUser;
+            export declare const EDate;
+            export declare const LoanTypeLoanTypeName: string;
+            export declare const LoanTypePrincipalHeadId: string;
+            export declare const LoanTypeInterestHeadId: string;
+            export declare const LoanTypeIsWelfareLoan: string;
+            export declare const LoanTypeIsPfLoan: string;
+            export declare const LoanTypeIsInterestPaymentWithPricipal: string;
+            export declare const LoanTypeIsInterestCalculateOnIssueDate: string;
+            export declare const LoanTypeGracePeriodMonth: string;
+            export declare const LoanTypeCalculationType: string;
+            export declare const LoanTypeShortCode: string;
+            export declare const LoanTypeIUser: string;
+            export declare const LoanTypeIDate: string;
+            export declare const LoanTypeEUser: string;
+            export declare const LoanTypeEDate: string;
+        }
+
+        ['Id', 'SchemeName', 'LoanTypeId', 'IUser', 'IDate', 'EUser', 'EDate', 'LoanTypeLoanTypeName', 'LoanTypePrincipalHeadId', 'LoanTypeInterestHeadId', 'LoanTypeIsWelfareLoan', 'LoanTypeIsPfLoan', 'LoanTypeIsInterestPaymentWithPricipal', 'LoanTypeIsInterestCalculateOnIssueDate', 'LoanTypeGracePeriodMonth', 'LoanTypeCalculationType', 'LoanTypeShortCode', 'LoanTypeIUser', 'LoanTypeIDate', 'LoanTypeEUser', 'LoanTypeEDate'].forEach(x => (<any>Fields)[x] = x);
+    }
+}
+

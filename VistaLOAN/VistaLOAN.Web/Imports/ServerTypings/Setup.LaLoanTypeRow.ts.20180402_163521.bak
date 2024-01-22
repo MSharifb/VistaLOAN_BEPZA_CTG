@@ -1,0 +1,51 @@
+﻿namespace VistaLOAN.Setup {
+    export interface LaLoanTypeRow {
+        Id?: number;
+        LoanTypeName?: string;
+        PrincipalHeadId?: number;
+        InterestHeadId?: number;
+        IsWelfareLoan?: boolean;
+        IsPfLoan?: boolean;
+        IsInterestPaymentWithPricipal?: boolean;
+        IsInterestCalculateOnIssueDate?: boolean;
+        GracePeriodMonth?: number;
+        CalculationType?: number;
+        ShortCode?: string;
+        IUser?: string;
+        IDate?: string;
+        EUser?: string;
+        EDate?: string;
+    }
+
+    export namespace LaLoanTypeRow {
+        export const idProperty = 'Id';
+        export const nameProperty = 'LoanTypeName';
+        export const localTextPrefix = 'Setup.LaLoanType';
+        export const lookupKey = 'Setup.LaLoanType';
+
+        export function getLookup(): Q.Lookup<LaLoanTypeRow> {
+            return Q.getLookup<LaLoanTypeRow>('Setup.LaLoanType');
+        }
+
+        export namespace Fields {
+            export declare const Id: string;
+            export declare const LoanTypeName: string;
+            export declare const PrincipalHeadId: string;
+            export declare const InterestHeadId: string;
+            export declare const IsWelfareLoan: string;
+            export declare const IsPfLoan: string;
+            export declare const IsInterestPaymentWithPricipal: string;
+            export declare const IsInterestCalculateOnIssueDate: string;
+            export declare const GracePeriodMonth: string;
+            export declare const CalculationType: string;
+            export declare const ShortCode: string;
+            export declare const IUser: string;
+            export declare const IDate: string;
+            export declare const EUser: string;
+            export declare const EDate: string;
+        }
+
+        ['Id', 'LoanTypeName', 'PrincipalHeadId', 'InterestHeadId', 'IsWelfareLoan', 'IsPfLoan', 'IsInterestPaymentWithPricipal', 'IsInterestCalculateOnIssueDate', 'GracePeriodMonth', 'CalculationType', 'ShortCode', 'IUser', 'IDate', 'EUser', 'EDate'].forEach(x => (<any>Fields)[x] = x);
+    }
+}
+

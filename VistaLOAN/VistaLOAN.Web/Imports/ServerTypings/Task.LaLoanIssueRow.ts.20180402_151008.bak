@@ -1,0 +1,125 @@
+﻿namespace VistaLOAN.Task {
+    export interface LaLoanIssueRow {
+        Id?: number;
+        LoanApplicationId?: number;
+        LoanNo?: string;
+        EmployeeId?: number;
+        EffectiveMonth?: number;
+        EffectiveYear?: number;
+        LoanAmount?: number;
+        PrincipalInstallmentAmount?: number;
+        InterestAmount?: number;
+        InterestInstallmentAmount?: number;
+        LastPrincipalInstallmentAmount?: number;
+        LastInterestInstallmentAmount?: number;
+        IUser?: string;
+        IDate?: string;
+        EUser?: string;
+        EDate?: string;
+        IsFullPaid?: boolean;
+        IsReschedule?: boolean;
+        IsClose?: boolean;
+        FullPaidDate?: string;
+        IsPosting?: boolean;
+        LoanApplicationLoanNo?: string;
+        LoanApplicationEmployeeId?: number;
+        LoanApplicationSeniorityNo?: number;
+        LoanApplicationApplyDate?: string;
+        LoanApplicationLoanCriteriaId?: number;
+        LoanApplicationApplyLoanAmount?: number;
+        LoanApplicationApplyPrincipalInstallmentNo?: number;
+        LoanApplicationApplyInterestAmount?: number;
+        LoanApplicationApplyInterestInstallmentNo?: number;
+        LoanApplicationApplyInterestRate?: number;
+        LoanApplicationPurpose?: string;
+        LoanApplicationGrantedLoanAmount?: number;
+        LoanApplicationGrantedPrincipalInstallmentNo?: number;
+        LoanApplicationGrantedInterestAmount?: number;
+        LoanApplicationGrantedInterestInstallmentNo?: number;
+        LoanApplicationGrantedInterestRate?: number;
+        LoanApplicationNodeId?: number;
+        LoanApplicationApproverId?: string;
+        LoanApplicationAppStatusId?: number;
+        LoanApplicationIsDiscard?: boolean;
+        LoanApplicationIsApprovalProcess?: boolean;
+        LoanApplicationIsOffLine?: boolean;
+        LoanApplicationIUser?: string;
+        LoanApplicationIDate?: string;
+        LoanApplicationEUser?: string;
+        LoanApplicationEDate?: string;
+        LoanApplicationApprovedDate?: string;
+        LoanApplicationIsRefundablePfLoan?: boolean;
+        LoanApplicationIsReApply?: boolean;
+        LoanApplicationIsIssue?: boolean;
+        LoanApplicationResponsiblePersonId?: string;
+    }
+
+    export namespace LaLoanIssueRow {
+        export const idProperty = 'Id';
+        export const nameProperty = 'LoanNo';
+        export const localTextPrefix = 'Task.LaLoanIssue';
+        export const lookupKey = 'Task.LaLoanIssue';
+
+        export function getLookup(): Q.Lookup<LaLoanIssueRow> {
+            return Q.getLookup<LaLoanIssueRow>('Task.LaLoanIssue');
+        }
+
+        export namespace Fields {
+            export declare const Id: string;
+            export declare const LoanApplicationId: string;
+            export declare const LoanNo: string;
+            export declare const EmployeeId: string;
+            export declare const EffectiveMonth: string;
+            export declare const EffectiveYear: string;
+            export declare const LoanAmount: string;
+            export declare const PrincipalInstallmentAmount: string;
+            export declare const InterestAmount: string;
+            export declare const InterestInstallmentAmount: string;
+            export declare const LastPrincipalInstallmentAmount: string;
+            export declare const LastInterestInstallmentAmount: string;
+            export declare const IUser: string;
+            export declare const IDate: string;
+            export declare const EUser: string;
+            export declare const EDate: string;
+            export declare const IsFullPaid: string;
+            export declare const IsReschedule: string;
+            export declare const IsClose: string;
+            export declare const FullPaidDate: string;
+            export declare const IsPosting: string;
+            export declare const LoanApplicationLoanNo: string;
+            export declare const LoanApplicationEmployeeId: string;
+            export declare const LoanApplicationSeniorityNo: string;
+            export declare const LoanApplicationApplyDate: string;
+            export declare const LoanApplicationLoanCriteriaId: string;
+            export declare const LoanApplicationApplyLoanAmount: string;
+            export declare const LoanApplicationApplyPrincipalInstallmentNo: string;
+            export declare const LoanApplicationApplyInterestAmount: string;
+            export declare const LoanApplicationApplyInterestInstallmentNo: string;
+            export declare const LoanApplicationApplyInterestRate: string;
+            export declare const LoanApplicationPurpose: string;
+            export declare const LoanApplicationGrantedLoanAmount: string;
+            export declare const LoanApplicationGrantedPrincipalInstallmentNo: string;
+            export declare const LoanApplicationGrantedInterestAmount: string;
+            export declare const LoanApplicationGrantedInterestInstallmentNo: string;
+            export declare const LoanApplicationGrantedInterestRate: string;
+            export declare const LoanApplicationNodeId: string;
+            export declare const LoanApplicationApproverId: string;
+            export declare const LoanApplicationAppStatusId: string;
+            export declare const LoanApplicationIsDiscard: string;
+            export declare const LoanApplicationIsApprovalProcess: string;
+            export declare const LoanApplicationIsOffLine: string;
+            export declare const LoanApplicationIUser: string;
+            export declare const LoanApplicationIDate: string;
+            export declare const LoanApplicationEUser: string;
+            export declare const LoanApplicationEDate: string;
+            export declare const LoanApplicationApprovedDate: string;
+            export declare const LoanApplicationIsRefundablePfLoan: string;
+            export declare const LoanApplicationIsReApply: string;
+            export declare const LoanApplicationIsIssue: string;
+            export declare const LoanApplicationResponsiblePersonId: string;
+        }
+
+        ['Id', 'LoanApplicationId', 'LoanNo', 'EmployeeId', 'EffectiveMonth', 'EffectiveYear', 'LoanAmount', 'PrincipalInstallmentAmount', 'InterestAmount', 'InterestInstallmentAmount', 'LastPrincipalInstallmentAmount', 'LastInterestInstallmentAmount', 'IUser', 'IDate', 'EUser', 'EDate', 'IsFullPaid', 'IsReschedule', 'IsClose', 'FullPaidDate', 'IsPosting', 'LoanApplicationLoanNo', 'LoanApplicationEmployeeId', 'LoanApplicationSeniorityNo', 'LoanApplicationApplyDate', 'LoanApplicationLoanCriteriaId', 'LoanApplicationApplyLoanAmount', 'LoanApplicationApplyPrincipalInstallmentNo', 'LoanApplicationApplyInterestAmount', 'LoanApplicationApplyInterestInstallmentNo', 'LoanApplicationApplyInterestRate', 'LoanApplicationPurpose', 'LoanApplicationGrantedLoanAmount', 'LoanApplicationGrantedPrincipalInstallmentNo', 'LoanApplicationGrantedInterestAmount', 'LoanApplicationGrantedInterestInstallmentNo', 'LoanApplicationGrantedInterestRate', 'LoanApplicationNodeId', 'LoanApplicationApproverId', 'LoanApplicationAppStatusId', 'LoanApplicationIsDiscard', 'LoanApplicationIsApprovalProcess', 'LoanApplicationIsOffLine', 'LoanApplicationIUser', 'LoanApplicationIDate', 'LoanApplicationEUser', 'LoanApplicationEDate', 'LoanApplicationApprovedDate', 'LoanApplicationIsRefundablePfLoan', 'LoanApplicationIsReApply', 'LoanApplicationIsIssue', 'LoanApplicationResponsiblePersonId'].forEach(x => (<any>Fields)[x] = x);
+    }
+}
+

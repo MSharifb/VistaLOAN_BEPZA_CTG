@@ -1,0 +1,89 @@
+﻿@model VistaLOAN.Modules.Reports.ReportSearchViewModel
+@{
+    ViewBag.Title = "Personal Recovery History";
+}
+
+<!-- general form elements -->
+<div class="box box-primary">
+    <div class="box-header with-border grid-title">
+        <div class="title-text">Personal Recovery History</div>
+    </div><!-- /.box-header -->
+    <!-- form start -->
+    @using (Html.BeginForm("Index", "LoanInstallmentHistory", FormMethod.Post, new { id = "frm" }))
+    {
+        <div class="box-body">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        @Html.Label("Employee", new { @class = "control-label" })
+                        @Html.DropDownListFor(m => m.EmpId, Model.EmployeeListByEmpId, "Select One", new { @class = "form-controlForDDL  ddl js-Employee-Changed" })
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        @Html.Label("Appliation No", new { @class = "control-label" })
+                        @Html.DropDownListFor(m => m.LoanApplicationId, Model.LoanAppNoList, "All", new { @class = "form-controlForDDL ddl" })
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-footer">
+            @Html.HiddenFor(m=> m.EmpId)
+            @Html.HiddenFor(m => m.LoanApplicationId)
+            <button type="submit" id="btnSubmit" class="btn btn-primary"><i class="fa fa-search"></i> Preview</button>
+        </div>
+        <div class="form-group clearfix">
+            <div class="col-md-12 col-lg-12">
+                <iframe src="~/ReportViewers/MyReportViewer.aspx" width="100%" height="100%" style="border: none; min-height: 1500px;"></iframe>
+            </div>
+        </div>
+    }
+</div><!-- /.box -->
+<style>
+    .fixed-rpt-date {
+        width: 88% !important;
+    }
+</style>
+<script type="text/javascript">
+    $(function () {
+        $(".ddl").select2({
+            //
+            placeholder: {
+                id: '-1', // the value of the option
+                text: 'Select One'
+            },
+            allowClear: true
+        });
+
+        $("#btnSubmit").click(function () {
+            return fnValidate()
+        });
+
+        PopulateEmployeeWiseLoan($("#EmpId").val());
+
+        var $employeeSelect = $(".js-Employee-Changed");
+        $employeeSelect.on("change", function (e) {
+            var empId = e.val;
+            PopulateEmployeeWiseLoan(empId);
+        });
+
+
+        function PopulateEmployeeWiseLoan(empId)
+        {
+
+            var url = '@Url.Action("GetLoanApplicationByEmployee", "Report")' + '?empId=' + empId;
+
+            var $states = $("#LoanApplicationId");
+
+            $states.empty();
+            $states.append($("<option>").text('All').val('0')).trigger('change.select2');
+
+            $.getJSON(url, function (applications) {
+                $.each(applications, function (i, item) {
+                    $states.append($("<option>").text(item.Text).val(item.Value));
+                });
+            });
+        }
+    });
+</script>

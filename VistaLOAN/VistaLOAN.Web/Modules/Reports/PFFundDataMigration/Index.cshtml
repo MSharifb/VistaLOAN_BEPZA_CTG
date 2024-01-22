@@ -1,0 +1,79 @@
+﻿@model VistaLOAN.Modules.Reports.ReportSearchViewModel
+@{
+    ViewBag.Title = "PF Fund Data Migration";
+}
+
+<!-- general form elements -->
+<div class="box box-primary">
+    <div class="box-header with-border grid-title">
+        <div class="title-text">PF Fund Data Migration</div>
+    </div><!-- /.box-header -->
+    <!-- form start -->
+    @using (Html.BeginForm("Index", "PFFundDataMigration", FormMethod.Post, new { id = "frm" }))
+    {
+        <div class="box-body">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        @Html.Label("From Employee", new { @class = "control-label" })<label class="required-field">*</label>
+                        @Html.DropDownListFor(m => m.PFEmpId, Model.EmpListByEmpId, "Select One", new { @class = "form-controlForDDL required ddl" })
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        @Html.Label("To Employee", new { @class = "control-label" })<label class="required-field">*</label>
+                        @Html.DropDownListFor(m => m.EmpId, Model.EmployeeListByEmpId, "Select One", new { @class = "form-controlForDDL required ddl js-Employee-Changed" })
+                    </div>
+                </div>
+            </div>     
+        </div>
+        <div class="box-footer">
+            <button type="submit" id="btnConfirm" class="btn btn-success" style="margin-top: 22px;"><i class="fa fa-check"></i> Confirm</button>
+        </div>
+    }
+</div><!-- /.box -->
+<style>
+    .fixed-rpt-date {
+        width: 88% !important;
+    }
+</style>
+<script type="text/javascript">
+    $(function () {
+        $(".ddl").select2({
+            //
+            placeholder: {
+                id: '-1', // the value of the option
+                text: 'Select One'
+            },
+            allowClear: true
+        });
+
+        $(".date").datepicker();
+
+        $("#btnSubmit").click(function () {
+            return fnValidate()
+        });
+        $("#btnConfirm").click(function (e) {
+            e.preventDefault();
+            //return fnValidate();
+            var empId = $('#EmpId').val();
+            var pfEmpId = $('#PFEmpId').val();
+            var url = '@Url.Action("ConfirmInterest", "PFFundDataMigration")';
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    dataType: 'json',
+                    data: { empId: empId, pfEmpId: pfEmpId },
+                    timeout: 5000,
+                    error: function () {
+                        alert('System is unable to confirm please try again.');
+                    },
+                    success: function (result) {
+                        console.log(result);
+                        alert("successfully");
+                    }
+                });
+        });
+    });
+</script>

@@ -1,0 +1,1148 @@
+@import "site.theme.less";
+@import "site.mixins.less";
+@import "site.administration.less";
+@import "site.membership.less";
+
+.s-Dialog {
+    /*> .size {
+        width: 750px;
+        height: 600px;
+
+    }*/
+    .caption {
+        width: 170px;
+    }
+}
+
+.s-Form .caption {
+    text-align: left;
+    padding-left: 20px;
+
+    sup {
+        float: right;
+        top: 10px;
+        font-size: 15px;
+    }
+}
+
+.emaildomain {
+    width: 200px;
+}
+
+.slick-header-column {
+    border: 1px solid #bbb !important;
+    border-width: thin !important;
+    background-color: #eee;
+    border-bottom-color: #5bc0de !important;
+    border-bottom-width: 2px !important;
+    text-align: center;
+}
+
+.slick-cell {
+    border: 1px solid #ddd !important;
+    border-width: thin !important;
+}
+
+.quick-filter-item {
+    .inplace-button {
+        display: none;
+    }
+
+    .s-LookupEditor {
+        width: 250px;
+    }
+}
+
+.width2 {
+    @media (min-width: 768px) {
+        flex: auto !important;
+        width: 20% !important;
+
+        .caption {
+            width: 90px;
+        }
+    }
+}
+
+.width3 {
+    @media (min-width: 768px) {
+        flex: auto !important;
+        width: 25% !important;
+    }
+}
+
+.width4 {
+    @media (min-width: 768px) {
+        flex: auto !important;
+        width: 32% !important;
+        /*.caption {
+            width: 90px;
+        }*/
+    }
+}
+
+.width6 {
+
+    @media (min-width: 768px) {
+        flex: auto !important;
+        width: 48% !important;
+    }
+}
+
+.width9 {
+
+    @media (min-width: 768px) {
+        flex: auto !important;
+        width: 73% !important;
+    }
+}
+
+.form-controlForDDL {
+    display: block;
+    width: 100%;
+    height: 34px;
+    /*padding: 0px 12px;*/
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    /*border: 1px solid #ccc;*/
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+
+.s-Configurations-AccAccountingPeriodInformationDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccBankAccountInformationDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccBankBranchInformationDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccBankInformationDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccChartofAccountsDialog {
+    > .size {
+        width: 750px;
+    }
+
+    .caption {
+        width: 165px;
+    }
+}
+
+.s-Configurations-AccCommonDescriptionDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccCurrencyConversionDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccFundControlInformationDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccTransactionTypeDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccVoucherTypeDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccBankReconciliationDirectDialog {
+    > .size {
+        width: 950px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+
+
+.s-Transaction-AccBudgetSubmissionDetailDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccChequeReceiveRegisterDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccChequeBookDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccChequeRegisterDialog {
+    > .size {
+        width: 850px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccCostCentreOrInstituteInformationDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccTransactionTypeAssignDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccVoucherConfigurationDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+
+
+.s-Transaction-AccVoucherDtlAllocationDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccVoucherDtlBillRefDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccVoucherInformationDialog {
+    > .size {
+        width: 850px;
+    }
+
+    .caption {
+        width: 155px;
+    }
+}
+
+
+
+.s-Configurations-AccCurrencyConversionRateDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.inline-action.add-child-unit {
+    background-image: url(../serenity/images/node-insert-next.png);
+}
+
+.s-Transaction-AccTransactionTypeAssignMasterDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+/*.s-AccVoucherDetailsEditorDialog s-Transaction-AccVoucherDetailsEditorDialog {
+    > .size { width: 400px!important; }
+    .caption { width: 150px; }
+}*/
+
+/*.s-Transaction-AccVoucherDetailsEditorDialog {
+    > .size { width: 400px!important; }
+    .caption { width: 150px; }
+}*/
+
+/*.s-Transaction-AccVoucherDetailsDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}*/
+
+.s-Transaction-AccCostCentreOrInstituteInformationDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccVoucherTemplateDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccBudgetDepartmentInfoDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccUnitTypeDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+
+
+.s-Transaction-AccBudgetSubmissionDetailDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Accdb-AccBudgetSubmissionDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Accdb-AccBudgetSubmissionDetailDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Accdb-AccBudgetSubmissionDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Accdb-AccBudgetSubmissionDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Accdb-AccBudgetSubmissionDetailDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Accdb-AccBankReconciliationDirectDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccOpeningBalanceDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Accdb-AccChequeRegisterDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.fixed-rpt-date {
+    width: 90%;
+    display: inline-block;
+}
+
+.s-Transaction-VoucherPreviewDialog {
+    > .size {
+        width: 750px;
+        height: 500px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccCostCenterOpeningBalanceDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccCostCenterOpeningBalanceEditorDialog {
+    > .size {
+        width: 650px;
+        height: 300px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-NotesEditor {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    ul {
+        padding: 0;
+        min-height: 110px;
+        overflow-y: auto;
+        list-style: none;
+    }
+
+    li {
+        margin: 10px;
+        border-radius: 4px;
+        border: 1px solid #C3C2C2;
+        background-color: #F5E7DC;
+        padding: 8px;
+        position: relative;
+    }
+
+    .note-text {
+        padding-right: 24px;
+        display: block;
+    }
+
+    .note-delete {
+        background-image: url('../serenity/images/delete2.png');
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: 6px;
+        top: 6px;
+        opacity: 0.4;
+    }
+
+    .note-delete:hover {
+        opacity: 1;
+    }
+
+    .note-date {
+        margin-top: 6px;
+        display: block;
+        text-align: right;
+        color: rgb(42, 64, 132);
+        font-style: italic;
+    }
+
+    .s-Toolbar {
+        background-color: #eee;
+        padding: 4px;
+    }
+}
+
+.s-Transaction-AccViewBudgetDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccViewBudgetDetailsDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccViewBudgetDialog {
+    > .size {
+        width: 450px;
+        height: 500px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+/*.s-Transaction-AccBudgetHqItemsDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Transaction-AccBudgetHqItemsDetailsDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Transaction-AccBudgetHqMasterDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+
+
+.s-Transaction-AccBudgetHqItemsDetailsDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}*/
+
+.s-Transaction-AccBudgetHqItemsDetailsEditor .slick-cell input[type=text] {
+    text-align: right;
+    border-radius: 0;
+    width: 100%;
+    padding: 0 2px;
+    border: 1px solid #e7e7e7;
+}
+
+.s-Transaction-AccBudgetHqItemsDetailsEditor .slick-cell .dirty {
+    background-color: #ffe0e0;
+}
+
+.s-Transaction-BankReconciliationVoucherGrid .slick-cell input[type=text] {
+    text-align: right;
+    border-radius: 0;
+    width: 80%;
+    padding: 0 2px;
+    border: 1px solid #e7e7e7;
+}
+
+.s-Transaction-BankReconciliationVoucherGrid .slick-cell .dirty {
+    background-color: #ffe0e0;
+}
+
+
+.logo-holder {
+    float: left;
+    margin-left: 5px;
+}
+
+#site-navbar-brand {
+    padding: 0;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    #site-navbar-brand {
+        width: 100%;
+        display: block;
+        clear: both;
+        background-color: #222d32;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        span {
+            display: inline-block;
+            float: none;
+        }
+
+        .logo-holder {
+            margin-left: 0;
+        }
+    }
+}
+
+.site-title {
+    display: inline-block;
+    padding-top: 5px;
+}
+
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: left;
+        margin: 0;
+    }
+
+    .navbar-nav > li {
+        float: left;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+}
+
+.s-Configurations-AccVoucherApiConfigDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccVoucherApiConfigDetailsDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccVoucherApiDetailsDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccVoucherApiDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccEmpAdvanceDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccBudgetHqItemsEditorDialog {
+    .slick-column-name {
+        white-space: normal !important;
+    }
+
+    .slick-header-column.ui-state-default {
+        height: 40px !important;
+    }
+}
+
+.s-Transaction-AccBudgetSubmissionDialog {
+    > .size {
+        width: 950px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+
+    .slick-column-name {
+        white-space: normal !important;
+    }
+
+    .slick-header-column.ui-state-default {
+        height: 40px !important;
+    }
+}
+
+
+.s-Accdb-Test1Dialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccViewBudgetDetailsDeptDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccBudgetZoneItemsEditorDialog {
+    .slick-column-name {
+        white-space: normal !important;
+    }
+
+    .slick-header-column.ui-state-default {
+        height: 40px !important;
+    }
+}
+
+.s-Transaction-AccViewBudgetZoneDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccPartyPaymentDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccPartyPaymentDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccVoucherAttachmentDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccVoucherAttachmentDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccNoaDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Transaction-AccNoaDialog {
+    > .size {
+        width: 850px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+.s-Configurations-AccBankAdviceLetterTemplateDialog {
+    > .size {
+        width: 650px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+}
+
+
+.backColorofLabel {
+    background-color: #FFCF9E;
+}
+
+.backColorForLinkedWithAutoJV {
+    /*.slick-cell, .slick-cell a{
+        background-color:  #fef5e7;
+        color: black;
+    }*/
+}
+
+.approved-Voucher .col-Approve-Status {
+    background-color: lightgreen;
+    color: black;
+}
+
+
+.linked-Journal-Voucher {
+    .slick-cell, .slick-cell a {
+        color: darkgray;
+    }
+}
+
+
+
+
+.s-Task-LaLoanApplicationDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanCriteriaDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanTypeDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaLoanIssueDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanCriteriaDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanEligibleInformationDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanTypeDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaLoanApplicationDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanCriteriaDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanEligibleInformationDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaLoanIssueDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanTypeDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanTypeDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaLoanApplicationDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanCriteriaDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanEligibleInformationDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaLoanIssueDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaDonorInformationDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaLoanCircularInformationDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Loandb-LaLoanOpeningDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaLoanOpeningDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaMonthlyLoanInstallmentDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaLoanOpeningDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaMonthlyLoanInstallmentDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaDonorLoanDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaDonorLoanPaymentDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanTypeDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanTypeDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanTypeDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanEligibleInformationDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Setup-LaLoanEligibleInformationDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaLoanIssueDetailDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaRequestedLoanApplicationDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaRequestedLoanApplicationDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaLoanApplicationOfflineDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaCpfCashOrChequeCollectionDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-LaMonthlyLoanInstallmentDetailDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.required-field
+{
+    color: red;
+}
+
+.s-Setup-LaLoanApplicationLastNumberDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-NonRefundableFinalPaymentDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}
+
+.s-Task-PfFundDataMigrationDialog {
+    > .size { width: 650px; }
+    .caption { width: 150px; }
+}

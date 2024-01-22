@@ -1,0 +1,71 @@
+﻿namespace VistaLOAN.Setup {
+    export interface LaLoanEligibleInformationRow {
+        Id?: number;
+        LoanTypeId?: number;
+        EmployeeCategoryId?: number;
+        GradeFromId?: number;
+        GradeToId?: number;
+        ServiceDurationMin?: number;
+        MaxNoLoanApply?: number;
+        IUser?: string;
+        IDate?: string;
+        EUser?: string;
+        EDate?: string;
+        LoanTypeLoanTypeName?: string;
+        LoanTypePrincipalHeadId?: number;
+        LoanTypeInterestHeadId?: number;
+        LoanTypeIsWelfareLoan?: boolean;
+        LoanTypeIsPfLoan?: boolean;
+        LoanTypeIsInterestPaymentWithPricipal?: boolean;
+        LoanTypeIsInterestCalculateOnIssueDate?: boolean;
+        LoanTypeGracePeriodMonth?: number;
+        LoanTypeCalculationType?: number;
+        LoanTypeShortCode?: string;
+        LoanTypeIUser?: string;
+        LoanTypeIDate?: string;
+        LoanTypeEUser?: string;
+        LoanTypeEDate?: string;
+    }
+
+    export namespace LaLoanEligibleInformationRow {
+        export const idProperty = 'Id';
+        export const nameProperty = 'IUser';
+        export const localTextPrefix = 'Setup.LaLoanEligibleInformation';
+        export const lookupKey = 'Setup.LaLoanEligibleInformation';
+
+        export function getLookup(): Q.Lookup<LaLoanEligibleInformationRow> {
+            return Q.getLookup<LaLoanEligibleInformationRow>('Setup.LaLoanEligibleInformation');
+        }
+
+        export namespace Fields {
+            export declare const Id: string;
+            export declare const LoanTypeId: string;
+            export declare const EmployeeCategoryId: string;
+            export declare const GradeFromId: string;
+            export declare const GradeToId: string;
+            export declare const ServiceDurationMin: string;
+            export declare const MaxNoLoanApply: string;
+            export declare const IUser: string;
+            export declare const IDate: string;
+            export declare const EUser: string;
+            export declare const EDate: string;
+            export declare const LoanTypeLoanTypeName: string;
+            export declare const LoanTypePrincipalHeadId: string;
+            export declare const LoanTypeInterestHeadId: string;
+            export declare const LoanTypeIsWelfareLoan: string;
+            export declare const LoanTypeIsPfLoan: string;
+            export declare const LoanTypeIsInterestPaymentWithPricipal: string;
+            export declare const LoanTypeIsInterestCalculateOnIssueDate: string;
+            export declare const LoanTypeGracePeriodMonth: string;
+            export declare const LoanTypeCalculationType: string;
+            export declare const LoanTypeShortCode: string;
+            export declare const LoanTypeIUser: string;
+            export declare const LoanTypeIDate: string;
+            export declare const LoanTypeEUser: string;
+            export declare const LoanTypeEDate: string;
+        }
+
+        ['Id', 'LoanTypeId', 'EmployeeCategoryId', 'GradeFromId', 'GradeToId', 'ServiceDurationMin', 'MaxNoLoanApply', 'IUser', 'IDate', 'EUser', 'EDate', 'LoanTypeLoanTypeName', 'LoanTypePrincipalHeadId', 'LoanTypeInterestHeadId', 'LoanTypeIsWelfareLoan', 'LoanTypeIsPfLoan', 'LoanTypeIsInterestPaymentWithPricipal', 'LoanTypeIsInterestCalculateOnIssueDate', 'LoanTypeGracePeriodMonth', 'LoanTypeCalculationType', 'LoanTypeShortCode', 'LoanTypeIUser', 'LoanTypeIDate', 'LoanTypeEUser', 'LoanTypeEDate'].forEach(x => (<any>Fields)[x] = x);
+    }
+}
+

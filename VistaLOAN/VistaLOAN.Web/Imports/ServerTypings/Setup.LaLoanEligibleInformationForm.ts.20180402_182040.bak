@@ -1,0 +1,22 @@
+﻿namespace VistaLOAN.Setup {
+    export class LaLoanEligibleInformationForm extends Serenity.PrefixedContext {
+        static formKey = 'Setup.LaLoanEligibleInformation';
+
+    }
+
+    export interface LaLoanEligibleInformationForm {
+        LoanTypeId: Serenity.LookupEditor;
+        EmployeeCategoryId: Serenity.IntegerEditor;
+        GradeFromId: Serenity.IntegerEditor;
+        GradeToId: Serenity.IntegerEditor;
+        ServiceDurationMin: Serenity.IntegerEditor;
+        MaxNoLoanApply: Serenity.IntegerEditor;
+        IUser: Serenity.StringEditor;
+        IDate: Serenity.DateEditor;
+        EUser: Serenity.StringEditor;
+        EDate: Serenity.DateEditor;
+    }
+
+    [['LoanTypeId', () => Serenity.LookupEditor], ['EmployeeCategoryId', () => Serenity.IntegerEditor], ['GradeFromId', () => Serenity.IntegerEditor], ['GradeToId', () => Serenity.IntegerEditor], ['ServiceDurationMin', () => Serenity.IntegerEditor], ['MaxNoLoanApply', () => Serenity.IntegerEditor], ['IUser', () => Serenity.StringEditor], ['IDate', () => Serenity.DateEditor], ['EUser', () => Serenity.StringEditor], ['EDate', () => Serenity.DateEditor]].forEach(x => Object.defineProperty(LaLoanEligibleInformationForm.prototype, <string>x[0], { get: function () { return this.w(x[0], (x[1] as any)()); }, enumerable: true, configurable: true }));
+}
+

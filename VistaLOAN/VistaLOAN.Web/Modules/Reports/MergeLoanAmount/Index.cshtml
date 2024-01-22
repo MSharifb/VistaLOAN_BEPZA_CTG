@@ -1,0 +1,134 @@
+﻿@model VistaLOAN.Modules.Reports.ReportSearchViewModel
+@{
+    ViewBag.Title = "Merge Loan Amount";
+}
+
+<!-- general form elements -->
+<div class="box box-primary">
+    <div class="box-header with-border grid-title">
+        <div class="title-text">Merge Loan Amount</div>
+    </div><!-- /.box-header -->
+    <!-- form start -->
+    @using (Html.BeginForm("Index", "Merge Loan Amount", FormMethod.Post, new { id = "frm" }))
+    {
+        <div class="box-body">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        @Html.Label("Employee", new { @class = "control-label" })<label class="required-field">*</label>
+                        @Html.DropDownListFor(m => m.EmpId, Model.EmployeeListByEmpId, "Select One", new { @class = "form-controlForDDL required ddl js-Employee-Changed" })
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        @Html.Label("Appliation No", new { @class = "control-label" })<label class="required-field">*</label>
+                        @Html.DropDownListFor(m => m.LoanApplicationId, Model.LoanAppNoList, "Select One", new { @class = "form-controlForDDL required ddl" })
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        @Html.Label("Year ", new { @class = "control-label" })<label class="required-field">*</label>
+                        @Html.DropDownListFor(m => m.Year, Model.YearList, "Select One", new { @class = "form-controlForDDL required ddl" })
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        @Html.Label("Month ", new { @class = "control-label" })<label class="required-field">*</label>
+                        @Html.DropDownListFor(m => m.Month, Model.MonthList, "Select One", new { @class = "form-controlForDDL required ddl" })
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        @Html.Label("From ", new { @class = "control-label" })<label class="required-field">*</label>
+                        @Html.DropDownListFor(m => m.InstallmentTypeFrom, Model.InstallmentTypeList, "Select One", new { @class = "form-controlForDDL required ddl" })
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        @Html.Label("To ", new { @class = "control-label" })<label class="required-field">*</label>
+                        @Html.DropDownListFor(m => m.InstallmentTypeTo, Model.InstallmentTypeList, "Select One", new { @class = "form-controlForDDL required ddl" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-footer">
+            <button type="submit" id="btnConfirm" class="btn btn-success" style="margin-top: 22px;"><i class="fa fa-check"></i> Confirm</button>
+        </div>
+    }
+</div><!-- /.box -->
+<style>
+    .fixed-rpt-date {
+        width: 88% !important;
+    }
+</style>
+<script type="text/javascript">
+    $(function () {
+        $(".ddl").select2({
+            //
+            placeholder: {
+                id: '-1', // the value of the option
+                text: 'Select One'
+            },
+            allowClear: true
+        });
+
+        $(".date").datepicker();
+
+        $("#btnSubmit").click(function () {
+            return fnValidate()
+        });
+        $("#btnConfirm").click(function (e) {
+            e.preventDefault();
+            //return fnValidate();
+            var empId = $('#EmpId').val();
+            var loanId = $('#LoanApplicationId').val();
+            var year = $('#Year').val();
+            var month = $('#Month').val();
+            //var date = $('#ToDate').val().replace(/(\d{2})-(\d{2})-(\d{4})/, "$2/$1/$3");
+            var from = $('#InstallmentTypeFrom').val();
+            var to = $('#InstallmentTypeTo').val();
+
+            if (from == to) {
+                alert('Installment Type can not be same !');
+                return false;
+            }
+
+                var url = '@Url.Action("MergeLoanIsntallmentAmount", "MergeLoanAmount")';
+                    $.ajax({
+                        url: url,
+                        type: 'GET',
+                        dataType: 'json',
+                        data: { loanId: loanId, year: year, month: month},
+                        timeout: 5000,
+                        error: function () {
+                            alert('System is unable to confirm please try again.');
+                        },
+                        success: function (result) {
+                            alert("Merge completed successfully !");
+                        }
+                    });
+        });
+
+        var $employeeSelect = $(".js-Employee-Changed");
+        $employeeSelect.on("change", function (e) {
+
+            var empId = e.val;
+            var url = '@Url.Action("GetLoanApplicationByEmployee", "Report")' + '?empId=' + empId;
+            console.log(url);
+            var $states = $("#LoanApplicationId");
+            $.getJSON(url, function (applications) {
+
+                $states.empty();
+                $states.append($("<option>").text('Select One').val('0')).trigger('change.select2');
+
+                $.each(applications, function (i, item) {
+                    $states.append($("<option>").text(item.Text).val(item.Value));
+                });
+            });
+        });
+    });
+</script>

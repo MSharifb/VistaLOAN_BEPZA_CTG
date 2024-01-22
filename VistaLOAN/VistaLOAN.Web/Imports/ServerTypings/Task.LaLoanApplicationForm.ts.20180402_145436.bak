@@ -1,0 +1,43 @@
+﻿namespace VistaLOAN.Task {
+    export class LaLoanApplicationForm extends Serenity.PrefixedContext {
+        static formKey = 'Task.LaLoanApplication';
+
+    }
+
+    export interface LaLoanApplicationForm {
+        LoanNo: Serenity.StringEditor;
+        EmployeeId: Serenity.IntegerEditor;
+        SeniorityNo: Serenity.IntegerEditor;
+        ApplyDate: Serenity.DateEditor;
+        LoanCriteriaId: Serenity.LookupEditor;
+        ApplyLoanAmount: Serenity.DecimalEditor;
+        ApplyPrincipalInstallmentNo: Serenity.IntegerEditor;
+        ApplyInterestAmount: Serenity.DecimalEditor;
+        ApplyInterestInstallmentNo: Serenity.IntegerEditor;
+        ApplyInterestRate: Serenity.DecimalEditor;
+        Purpose: Serenity.StringEditor;
+        GrantedLoanAmount: Serenity.DecimalEditor;
+        GrantedPrincipalInstallmentNo: Serenity.IntegerEditor;
+        GrantedInterestAmount: Serenity.DecimalEditor;
+        GrantedInterestInstallmentNo: Serenity.IntegerEditor;
+        GrantedInterestRate: Serenity.DecimalEditor;
+        NodeId: Serenity.IntegerEditor;
+        ApproverId: Serenity.StringEditor;
+        AppStatusId: Serenity.IntegerEditor;
+        IsDiscard: Serenity.BooleanEditor;
+        IsApprovalProcess: Serenity.BooleanEditor;
+        IsOffLine: Serenity.BooleanEditor;
+        IUser: Serenity.StringEditor;
+        IDate: Serenity.DateEditor;
+        EUser: Serenity.StringEditor;
+        EDate: Serenity.DateEditor;
+        ApprovedDate: Serenity.DateEditor;
+        IsRefundablePfLoan: Serenity.BooleanEditor;
+        IsReApply: Serenity.BooleanEditor;
+        IsIssue: Serenity.BooleanEditor;
+        ResponsiblePersonId: Serenity.StringEditor;
+    }
+
+    [['LoanNo', () => Serenity.StringEditor], ['EmployeeId', () => Serenity.IntegerEditor], ['SeniorityNo', () => Serenity.IntegerEditor], ['ApplyDate', () => Serenity.DateEditor], ['LoanCriteriaId', () => Serenity.LookupEditor], ['ApplyLoanAmount', () => Serenity.DecimalEditor], ['ApplyPrincipalInstallmentNo', () => Serenity.IntegerEditor], ['ApplyInterestAmount', () => Serenity.DecimalEditor], ['ApplyInterestInstallmentNo', () => Serenity.IntegerEditor], ['ApplyInterestRate', () => Serenity.DecimalEditor], ['Purpose', () => Serenity.StringEditor], ['GrantedLoanAmount', () => Serenity.DecimalEditor], ['GrantedPrincipalInstallmentNo', () => Serenity.IntegerEditor], ['GrantedInterestAmount', () => Serenity.DecimalEditor], ['GrantedInterestInstallmentNo', () => Serenity.IntegerEditor], ['GrantedInterestRate', () => Serenity.DecimalEditor], ['NodeId', () => Serenity.IntegerEditor], ['ApproverId', () => Serenity.StringEditor], ['AppStatusId', () => Serenity.IntegerEditor], ['IsDiscard', () => Serenity.BooleanEditor], ['IsApprovalProcess', () => Serenity.BooleanEditor], ['IsOffLine', () => Serenity.BooleanEditor], ['IUser', () => Serenity.StringEditor], ['IDate', () => Serenity.DateEditor], ['EUser', () => Serenity.StringEditor], ['EDate', () => Serenity.DateEditor], ['ApprovedDate', () => Serenity.DateEditor], ['IsRefundablePfLoan', () => Serenity.BooleanEditor], ['IsReApply', () => Serenity.BooleanEditor], ['IsIssue', () => Serenity.BooleanEditor], ['ResponsiblePersonId', () => Serenity.StringEditor]].forEach(x => Object.defineProperty(LaLoanApplicationForm.prototype, <string>x[0], { get: function () { return this.w(x[0], (x[1] as any)()); }, enumerable: true, configurable: true }));
+}
+

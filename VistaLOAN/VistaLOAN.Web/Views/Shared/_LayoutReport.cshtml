@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+@{
+    var rtl = System.Globalization.CultureInfo.CurrentUICulture.TextInfo.IsRightToLeft;
+}
+<html lang="@UICulture">
+<head>
+    @{Html.RenderPartial(MVC.Views.Shared._LayoutHead);}
+    @RenderSection("Head", false)
+    <title>@ViewData["Title"]</title>
+</head>
+<body id="s-@(ViewData["PageId"])Page" class="@(ViewData["BodyClass"]) no-navigation@(rtl ? " rtl" : "")">
+    <link href="~/Modules/Yard/Reports/report.css" rel="stylesheet" />
+    <section class="invoice">
+        <div class="row">
+            <div class="col-xs-2">
+                <img width="110" height="110" src="~/Content/images/bepza-logo.png" />
+            </div>
+
+            <div class="col-xs-10">
+                <h1>BEPZA</h1>
+                <h2 class="page-header">
+                    @ViewData["Title"]
+                    <small class="pull-right">Date: @DateTime.Now.ToString(DateHelper.CurrentDateFormat)</small>
+                </h2>
+            </div>
+        </div>
+        <br />
+
+        @RenderBody()
+
+    </section>
+</body>
+</html>
